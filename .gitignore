@@ -2,3 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
+*.pages
+03-analysis/student-performance/.DS_Store
+03-analysis/student-performance/data/.DS_Store
+*.csv
+03-analysis/student-performance/data/.DS_Store
+03-analysis/student-performance/.DS_Store
+03-analysis/.DS_Store
