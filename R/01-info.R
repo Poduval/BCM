@@ -6,7 +6,7 @@
 #' @export
 #' 
 bcm_programs <- function() {
-  df %>% 
+  bcmdata %>% 
     group_by(Program) %>% 
     summarise(NoOfPapers = n_distinct(Paper)) %>% 
     ungroup() %>% 
@@ -37,13 +37,13 @@ print.bcmprogram <- function(x) {
 #' @export
 #' 
 bcm_papers <- function() {
-  if(interactive() & nrow(df) > 1) {
+  if(interactive() & nrow(bcmdata) > 1) {
     choice <- utils::menu(bcm_programs()$programs$Program, title = "Choose one program", 
                           graphics = TRUE)
     program <- bcm_programs()$programs$Program[choice]
   } else program <- "Statistics"
   
-  df %>% 
+  bcmdata %>% 
     filter(Program == program) %>% 
     select(Semester, PaperCode, Paper, PaperCredit) %>% 
     distinct(Semester, Paper, .keep_all = TRUE) -> pp
@@ -90,20 +90,20 @@ print.bcmpapers <- function(x) {
 #' 
 bcm_results <- function() {
   
-  if(interactive() & nrow(df) > 1) {
+  if(interactive() & nrow(bcmdata) > 1) {
     choice <- utils::menu(bcm_programs()$programs$Program, title = "Choose one program", 
                           graphics = TRUE)
     program <- bcm_programs()$programs$Program[choice]
   } else program <- "Statistics"
   
-  if(interactive() & nrow(df) > 1) {
-    choice_for_years <- sort(unique(df$Year))
+  if(interactive() & nrow(bcmdata) > 1) {
+    choice_for_years <- sort(unique(bcmdata$Year))
     choice <- utils::menu(choice_for_years, title = "Choose year", 
                           graphics = TRUE)
     year <- choice_for_years[choice]
   } else year <- 2017
   
-  df %>% 
+  bcmdata %>% 
     filter(Program == program, Year == year) %>% 
     group_by(Grade, Paper) %>% 
     summarise(N = n_distinct(StudentId)) %>% 

@@ -7,3 +7,5 @@
 ^04-packaging\.R$
 ^renv$
 ^renv\.lock$
+^05-release$
+^BCM\.Rproj$

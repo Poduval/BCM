@@ -14,3 +14,6 @@
 03-analysis/student-performance/Objective-1.html
 03-analysis/student-performance/Objective-1_files/htmlwidgets-1.5.3/htmlwidgets.js
 data/df.rda
+.DS_Store
+*.key
+*.rda
