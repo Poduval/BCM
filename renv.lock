@@ -9,12 +9,6 @@
     ]
   },
   "Packages": {
-    "BCM": {
-      "Package": "BCM",
-      "Version": "17.1.0",
-      "Source": "unknown",
-      "Hash": "51e29159626c679718bade50654bb64e"
-    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-54",

@@ -4,6 +4,9 @@ library(ggplot2)
 data_path <- "03-analysis/student-performance/data"
 
 # Import ====
+# data_file_names <- list.files("03-analysis", recursive = TRUE, include.dirs = TRUE)
+# (data_file_names <- data_file_names[stringr::str_detect(data_file_names, ".csv$")])
+
 data_file_names <- list.files(data_path)
 data_file_names
 
@@ -230,3 +233,4 @@ df$Grade <- factor(df$Grade, levels = c("S", "A+", "A", "B+", "B", "C", "D"))
 
 # Save data ====
 save(df, file = file.path(dirname(data_path), "01-prep.RData"))
+

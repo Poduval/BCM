@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^01-contents\.pages$
+^01-contents\.pdf$
+^02-documents$
+^03-analysis$
+^04-packaging\.R$
+^renv$
+^renv\.lock$

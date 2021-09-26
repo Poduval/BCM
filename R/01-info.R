@@ -16,6 +16,7 @@ bcm_programs <- function() {
 
 #' print.bcmprogram
 #' @description Prints the list of programs offered by the college.
+#' @param x an object of class bcmprogram
 #' @import dplyr
 #' @export
 #' 
@@ -52,6 +53,7 @@ bcm_papers <- function() {
 
 #' print.bcmpapers
 #' @description Prints the list of papers offered by BCM college per semester.
+#' @param x an object of class bcmpapers
 #' @import dplyr
 #' @export
 #' 
@@ -114,6 +116,7 @@ bcm_results <- function() {
 
 #' print.bcmresult
 #' @description Print the result for each year every year.
+#' @param x an object of class bcmresult 
 #' @import dplyr
 #' @export
 #' 
