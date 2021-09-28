@@ -1,5 +1,5 @@
 #' bcm_programs
-#' @description Returns the list of programs offered by the college.
+#' @description It returns the list of programs offered by the college.
 #' @examples
 #' bcm_programs()
 #' @import dplyr
@@ -15,7 +15,7 @@ bcm_programs <- function() {
 }
 
 #' print.bcmprogram
-#' @description Prints the list of programs offered by the college.
+#' @description It prints the list of programs offered by the college.
 #' @param x an object of class bcmprogram
 #' @import dplyr
 #' @export
@@ -27,11 +27,11 @@ print.bcmprogram <- function(x) {
   cat("\n")
   cat("================================================================")
   cat("\n")
-  print(x$programs, n = Inf)
+  print.data.frame(x$programs)
 }
 
 #' bcm_papers
-#' @description Returns the list of papers offered by BCM college per semester.
+#' @description It returns the list of papers offered by BCM college per semester.
 #' @import dplyr
 #' @importFrom utils menu
 #' @export
@@ -52,7 +52,7 @@ bcm_papers <- function() {
 }
 
 #' print.bcmpapers
-#' @description Prints the list of papers offered by BCM college per semester.
+#' @description It prints the list of papers offered by BCM college per semester.
 #' @param x an object of class bcmpapers
 #' @import dplyr
 #' @export
@@ -73,17 +73,17 @@ print.bcmpapers <- function(x) {
   cat("\n")
   cat("-------------------------------------")
   cat("\n")
-  pc %>% print(n = Inf)
+  print.data.frame(pc)
   cat("\n")
   cat("Details of the papers -->")
   cat("\n")
   cat("-------------------------------------")
   cat("\n")
-  print(x$papers, n = Inf)
+  print.data.frame(x$papers)
 }
 
 #' bcm_results
-#' @description Return the result for each year every year.
+#' @description It return the result for each year every year.
 #' @import dplyr tidyr
 #' @importFrom utils menu
 #' @export
@@ -115,7 +115,7 @@ bcm_results <- function() {
 }
 
 #' print.bcmresult
-#' @description Print the result for each year every year.
+#' @description It print the result for each year every year.
 #' @param x an object of class bcmresult 
 #' @import dplyr
 #' @export
@@ -127,6 +127,6 @@ print.bcmresult <- function(x) {
   cat("\n")
   cat("================================================================")
   cat("\n")
-  print(x$result, n = Inf)
+  print.data.frame(x$result)
 }
 

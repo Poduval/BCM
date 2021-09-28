@@ -7,7 +7,7 @@
 bcm_programs()
 }
 \description{
-Returns the list of programs offered by the college.
+It returns the list of programs offered by the college.
 }
 \examples{
 bcm_programs()

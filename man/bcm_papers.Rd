@@ -7,5 +7,5 @@
 bcm_papers()
 }
 \description{
-Returns the list of papers offered by BCM college per semester.
+It returns the list of papers offered by BCM college per semester.
 }

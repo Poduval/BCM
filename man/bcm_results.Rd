@@ -7,5 +7,5 @@
 bcm_results()
 }
 \description{
-Return the result for each year every year.
+It return the result for each year every year.
 }

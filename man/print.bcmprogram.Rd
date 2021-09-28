@@ -10,5 +10,5 @@
 \item{x}{an object of class bcmprogram}
 }
 \description{
-Prints the list of programs offered by the college.
+It prints the list of programs offered by the college.
 }

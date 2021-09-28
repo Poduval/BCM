@@ -17,3 +17,4 @@ data/df.rda
 .DS_Store
 *.key
 *.rda
+inst/doc

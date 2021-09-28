@@ -10,5 +10,5 @@
 \item{x}{an object of class bcmpapers}
 }
 \description{
-Prints the list of papers offered by BCM college per semester.
+It prints the list of papers offered by BCM college per semester.
 }

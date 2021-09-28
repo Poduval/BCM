@@ -10,5 +10,5 @@
 \item{x}{an object of class bcmresult}
 }
 \description{
-Print the result for each year every year.
+It print the result for each year every year.
 }

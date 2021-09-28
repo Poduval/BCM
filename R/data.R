@@ -1,3 +1,9 @@
+utils:::globalVariables(c(".", "N", ".N",
+  "bcmdata", "Year", "Semester", "PaperCode", "Paper", "PaperCredit", 
+  "ExternalMark", "ExternalMarkMax", "InternalMark", "InternalMarkMax", 
+  "TotalMark", "TotalMarkMax", "Grade", "GradePoint", "CreditScore", 
+  "FinalResult", "StudentId", "ProgramCode", "Program"))
+
 #' BCM data
 #'
 #' A data set containing student's results from 2017 on wards
