@@ -13,4 +13,4 @@ The college motto is SAPIENTIA ET GRATIA i.e. WISDOM AND GRACE, the two essentia
 B.C.M College aims at the integral personalized education of the young. It strives to mold intellectually well trained, morally upright, socially committed, spiritually inspired men and women for the India of today.
 
 ## Instalation 
-`install_github("Poduval/BCM/release/BCM")`
+`install_github("Poduval/BCM")`
